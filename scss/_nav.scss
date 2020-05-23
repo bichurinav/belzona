@@ -1,0 +1,31 @@
+.nav {
+	height: 50px;
+	@media (max-width: 768px) {
+		display: none;
+	}
+	&__container {
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+		overflow-x: auto;
+		white-space: nowrap;
+		padding: 0;
+	}
+	&__link {
+		text-decoration: none;
+		color: $main-color;
+		font-weight: 500;
+		transition: opacity .3s;
+		margin-right: 35px;
+		&:first-child {
+			padding-left: 15px;
+		}
+		&:last-child {
+			margin-right: 0;
+			padding-right: 15px;
+		}
+		&:hover {
+			opacity: .75;
+		}
+	}
+}

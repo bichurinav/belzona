@@ -1,0 +1,13 @@
+.title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 28px;
+    color: $black;
+    &_white {
+        color: #fff;
+    }
+    @media (max-width: 500px) {
+        width: 100%;
+        text-align: center;
+    }
+}

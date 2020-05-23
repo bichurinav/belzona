@@ -1,0 +1,10 @@
+.message {
+    resize: vertical;
+    min-height: 80px;
+    max-height: 200px;
+    padding: 10px;
+    font-family: $main-font;
+    border: 1px solid $main-color;
+    outline-color: $main-color;
+    border-radius: 5px;
+}

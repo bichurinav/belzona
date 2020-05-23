@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa:300,700|Roboto:300,400,500&display=swap&subset=cyrillic">
+  <title>Belzona</title>
+</head>
+
+<body class="page">
+  <header class="header page__header">
+    <div class="container header__container">
+      
+      <div class="menu-btn header__menu-btn">
+        <span class="menu-btn__line"></span>
+        <span class="menu-btn__line"></span>
+        <span class="menu-btn__line"></span>
+      </div>
+      <!-- ./menu-btn -->
+      
+      <a href="/"><img class="logo" src="./img/logo/logo.png" alt="logo"></a>
+      <!-- <div class="logo">
+            </div> -->
+      <!-- /.logo -->
+      <div class="header-info header-info_hide">
+        <div class="info__item">
+          <img src="./img/header/marker-icon.svg" alt="" class="info__icon">
+          <p class="info__desc">Пермь <br> Революции 5/1</p>
+        </div>
+        <!-- /.info__item -->
+        <div class="info__item">
+          <img src="./img/header/clock-icon.svg" alt="" class="info__icon">
+          <p class="info__desc">с 9:00 до 18:00 <br> пн-пт</p>
+        </div>
+        <!-- /.info__item -->
+      </div>
+      <!-- /.header__info -->
+
+      <div class="header-mobile">
+        <div class="header-mobile__info">
+          <img src="./img/header/marker-icon.svg" alt="" class="header-mobile__icon">
+          <p class="header-mobile__desc">Пермь <br> Революции 5/1</p>
+        </div>
+        <!-- ./header-mobile__info -->
+        <div class="header-mobile__info">
+          <img src="./img/header/clock-icon.svg" alt="" class="header-mobile__icon">
+          <p class="header-mobile__desc header-mobile__desc_second">с 9:00 до 18:00 <br> пн-пт</p>
+        </div>
+        <!-- ./header-mobile__info -->
+        <div class="header-mobile__info">
+          <img src="./img/header/phone-icon.svg" alt="" class="header-mobile__icon">
+          <a href="tel:+73422159737" class="header-mobile__desc header-mobile__desc_prelast">+7 (342) 215-97-37</a>
+        </div>
+        <!-- ./header-mobile__info -->
+        <div class="header-mobile__info">
+          <img src="./img/header/mail-icon.svg" alt="" class="header-mobile__icon">
+          <a href="mailto:belzona@ngs-perm.com" class="header-mobile__desc header-mobile__desc_last">belzona@ngs-perm.com</a>
+        </div>
+        <!-- ./header-mobile__info -->
+      </div>
+      <!-- ./header-info_mobile -->
+      <div class="button button_rounded header__button">Оставить заявку</div>
+      <!-- /.button -->
+      <div class="contacts contacts_hide">
+        <a class="contacts__phone" href="tel:+73422159737">+7 (342) 215-97-37</a>
+        <a class="contacts__email" target="_blank" href="mailto:belzona@ngs-perm.com">belzona@ngs-perm.com</a>
+      </div>
+      <!-- /.contacts -->
+    </div>
+    <!-- /.container -->
+  </header>
+  <!-- ./header -->
+  <div class="popup-callback">
+    <div class="popup-callback__inner">
+      <form class="popup-callback__form">
+        <h4 class="popup-callback__title">Мы вам перезвоним!</h4>
+        <div class="popup-callback__form-wrapper">
+          <p class="popup-callback__label">Ваше имя<span>*</span></p>
+          <input placeholder="" type="text" class="input input_line popup-callback__field" id="fieldName">
+          <span class="popup-callback__error">Заполните поле</span>
+        </div>
+        <div class="popup-callback__form-wrapper">
+          <p class="popup-callback__label">Телефон<span>*</span></p>
+          <input type="text" class="input input_line popup-callback__field" id="fieldPhone">
+          <span class="popup-callback__error">Заполните поле</span>
+        </div>
+        <textarea placeholder="Задайте вопросы (необязательно)" class="message popup-callback__message"></textarea>
+        <button class="button popup-callback__btn">Отправить заявку</button>
+        <div class="popup-callback__wrapper-close">
+          <svg class="popup-callback__close" viewBox="0 0 365.71733 365" xmlns="http://www.w3.org/2000/svg"><g><path d="m356.339844 296.347656-286.613282-286.613281c-12.5-12.5-32.765624-12.5-45.246093 0l-15.105469 15.082031c-12.5 12.503906-12.5 32.769532 0 45.25l286.613281 286.613282c12.503907 12.5 32.769531 12.5 45.25 0l15.082031-15.082032c12.523438-12.480468 12.523438-32.75.019532-45.25zm0 0"/><path d="m295.988281 9.734375-286.613281 286.613281c-12.5 12.5-12.5 32.769532 0 45.25l15.082031 15.082032c12.503907 12.5 32.769531 12.5 45.25 0l286.632813-286.59375c12.503906-12.5 12.503906-32.765626 0-45.246094l-15.082032-15.082032c-12.5-12.523437-32.765624-12.523437-45.269531-.023437zm0 0"/></g></svg>
+        </div>  
+      </form>
+    </div>
+  </div>
+  <!-- ./popup-callback -->
+  <nav class="nav">
+    <div class="container nav__container">
+      <a href="#" class="nav__link">Главная</a>
+      <a href="#" class="nav__link">О компании</a>
+      <a href="#" class="nav__link">Продукция</a>
+      <a href="#" class="nav__link">Работы</a>
+      <a href="#" class="nav__link">Отзывы</a>
+      <a href="#" class="nav__link">Контакты</a>
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!-- /.nav -->
+  <ul class="nav-mobile">
+      <li class="nav-mobile__item">
+        <a href="#" class="nav-mobile__link">Главная</a></li>
+      <li class="nav-mobile__item">
+        <a href="#" class="nav-mobile__link">О компании</a></li>
+      <li class="nav-mobile__item">
+        <a href="#" class="nav-mobile__link">Продукция</a></li>
+      <li class="nav-mobile__item">
+        <a href="#" class="nav-mobile__link">Работы</a></li>
+      <li class="nav-mobile__item">
+        <a href="#" class="nav-mobile__link">Отзывы</a></li>
+      <li class="nav-mobile__item">
+        <a href="#" class="nav-mobile__link">Контакты</a></li>
+  </ul>
+  <!-- /.nav -->
+  <main class="content page__content">
+    <section class="slider">
+        <div class="slider__container swiper-container">
+            <div class="slider__wrapper swiper-wrapper">
+                <div class="slider-slide swiper-slide" style="background-image: url(./img/slider/slide_1.png);">
+                    <div class="slide__wrapper">
+                        <div class="container slide__container">
+                            <div class="slide__inner">
+                                <div class="slide__desc">Покрытия Belzona способны решить проблемы технического обслуживания и защиты оборудования или конструкций от износа, разрушения или воздействия химических веществ</div>
+                                <a href="#" class="button button_rect" id="slideCallback">Узнать больше</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.slider-side -->
+                <div class="slider-slide swiper-slide" style="background-image: url(./img/slider/slide-2.jpg);">
+                    <div class="slide__wrapper">
+                        <div class="container slide__container">
+                            <div class="slide__inner">
+                                <div class="slide__desc">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Сих, его.</div>
+                                <a href="#" class="button button_rect" id="slideCallback">Узнать больше</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.slider-side -->
+                <div class="slider-slide swiper-slide" style="background-image: url(./img/slider/slide-3.jpg);">
+                  <div class="slide__wrapper">
+                      <div class="container slide__container">
+                          <div class="slide__inner">
+                              <div class="slide__desc">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Сих, его.</div>
+                              <a href="#" class="button button_rect" id="slideCallback">Узнать больше</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- /.slider-side -->
+            </div>
+            <div class="slider__arrows">
+              <img class="slider__arrow slider__arrow_prev" src="./img/slider/arrow-left.svg" alt="">
+              <img class="slider__arrow slider__arrow_next" src="./img/slider/arrow-right.svg" alt="">
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- /.slider -->
+    <section class="features">
+        <div class="container features__container">
+            <div class="features__title">Использование материалов <strong class="strong">Belzona</strong> позволяет вам:</div>
+            <div class="row features__row">
+                <div class="features__item">
+                    <div class="features__icon">
+                        <svg class="features__border" xmlns="http://www.w3.org/2000/svg" width="156" height="156" viewBox="0 0 156 156" fill="none">
+                            <circle cx="78" cy="78" r="75" stroke="#4C91F9" stroke-width="5" stroke-linecap="round" stroke-dasharray="25 20" />
+                        </svg>
+                        <img src="./img/features/feature-icon_1.svg" alt="" class="features__img">
+                    </div>
+                    <div class="features__desc">Увеличить <strong class="strong">срок службы</strong> оборудования</div>
+                </div>
+                <!-- /.feature__item -->
+                <div class="features__item">
+                    <div class="features__icon">
+                        <svg class="features__border" xmlns="http://www.w3.org/2000/svg" width="156" height="156" viewBox="0 0 156 156" fill="none">
+                            <circle cx="78" cy="78" r="75" stroke="#4C91F9" stroke-width="5" stroke-linecap="round" stroke-dasharray="25 20" />
+                        </svg>
+                        <img src="./img/features/feature-icon_2.svg" alt="" class="features__img">
+                    </div>
+                    <div class="features__desc">Уменьшить <strong class="strong">расходы</strong> за счет роста доступности ресурсов</div>
+                </div>
+                <!-- /.feature__item -->
+                <div class="features__item">
+                    <div class="features__icon">
+                        <svg class="features__border" xmlns="http://www.w3.org/2000/svg" width="156" height="156" viewBox="0 0 156 156"
+                            fill="none">
+                            <circle cx="78" cy="78" r="75" stroke="#4C91F9" stroke-width="5" stroke-linecap="round" stroke-dasharray="25 20" />
+                        </svg>
+                        <img src="./img/features/feature-icon_3.svg" alt="" class="features__img">
+                    </div>
+                    <div class="features__desc">Соединять <strong class="strong">разнотипные</strong> материалы</div>
+                </div>
+                <!-- /.feature__item -->
+                <div class="features__item">
+                    <div class="features__icon">
+                        <svg class="features__border" xmlns="http://www.w3.org/2000/svg" width="156" height="156" viewBox="0 0 156 156"
+                            fill="none">
+                            <circle cx="78" cy="78" r="75" stroke="#4C91F9" stroke-width="5" stroke-linecap="round" stroke-dasharray="25 20" />
+                        </svg>
+                        <img src="./img/features/feature-icon_4.svg" alt="" class="features__img">
+                    </div>
+                    <div class="features__desc">Усилить <strong class="strong">безопасность</strong> за счет отсутствия летучих веществ</div>
+                </div>
+                <!-- /.feature__item -->
+            </div>
+        </div>
+        <!-- /.container features__container -->
+    </section>
+    <!-- /.features -->
+    <section class="services content__services">
+      <div class="container">
+        <div class="services__inner">
+          <h3 class="title services__title">Наши услуги</h3>
+          <div class="row">
+            <div class="services__items-wrapper">
+              <article class="services__item">
+                <span class="services__num">01</span>
+                <p class="services__text">Поставка ремонтных композитов Belzona</p>
+              </article>
+              <!-- ./services__item -->
+              <article class="services__item">
+                <span class="services__num">02</span>
+                <p class="services__text">Проведение ремонтно-восстановительных работ</p>
+              </article>
+              <!-- ./services__item -->
+              <article class="services__item">
+                <span class="services__num">03</span>
+                <p class="services__text">Разработка технического решения на проведение ремонтов по заданию заказчика
+                </p>
+              </article>
+              <!-- ./services__item -->
+            </div>
+            <!-- ./services__items-wrapper -->
+            <div class="services__items-wrapper">
+              <article class="services__item">
+                <span class="services__num">04</span>
+                <p class="services__text">Обеспечение технического сопровождения ремонтов</p>
+              </article>
+              <!-- ./services__item -->
+              <article class="services__item">
+                <span class="services__num">05</span>
+                <p class="services__text">Производство и монтаж насосного оборудования</p>
+              </article>
+              <!-- ./services__item -->
+              <article class="services__item">
+                <span class="services__num">06</span>
+                <p class="services__text">Дистрибьюторское соглашение на территории Пермского края и Удмуртской
+                  республики</p>
+              </article>
+              <!-- ./services__item -->
+            </div>
+            <!-- ./services__items-wrapper -->
+          </div>
+          <!-- ./row -->
+        </div>
+        <!-- ./services__inner -->
+      </div>
+      <!-- ./container -->
+    </section>
+    <!-- ./services -->
+    <section class="products">
+      <div class="container">
+        <div class="products__inner">
+          <div class="row products__row">
+            <h3 class="title products__title">Продукция</h3>
+            <div class="products__links-wrapper">
+              <span href="#" class="products__link">по сериям</span>
+              <span class="products__seperator">/</span>
+              <span href="#" class="products__link">по назначению</span>
+            </div>
+          </div>
+          <!-- ./row products__row -->
+          <div class="products__items-wrapper">
+            <article class="goods products__good" style="background: url('./img/products/item-1.png') no-repeat;
+            background-size: cover; background-position: center center;">
+              <a class="goods__link" href="#">
+                <span class="goods__name">Серия 1000</span>
+              </a>
+            </article>
+            <!-- ./products__good -->
+            <article class="goods products__good" style="background: url('./img/products/item-2.png') no-repeat;
+            background-size: cover; background-position: center center;">
+              <a class="goods__link" href="#">
+                <span class="goods__name">Серия 2000</span>
+              </a>
+            </article>
+            <!-- ./products__good -->
+            <article class="goods products__good" style="background: url('./img/products/item-3.png') no-repeat;
+            background-size: cover; background-position: center center;">
+              <a class="goods__link" href="#">
+                <span class="goods__name">Серия 3000</span>
+              </a>
+            </article>
+            <!-- ./products__good -->
+            <article class="goods products__good" style="background: url('./img/products/item-4.png') no-repeat;
+            background-size: cover; background-position: center center;">
+              <a class="goods__link" href="#">
+                <span class="goods__name">Серия 4000</span>
+              </a>
+            </article>
+            <!-- ./products__good -->
+            <article class="goods products__good" style="background: url('./img/products/item-5.png') no-repeat;
+            background-size: cover; background-position: center center;">
+              <a class="goods__link" href="#">
+                <span class="goods__name">Серия 5000</span>
+              </a>
+            </article>
+            <!-- ./products__good -->
+            <article class="goods products__good" style="background: url('./img/products/item-6.png') no-repeat;
+            background-size: cover; background-position: center center;">
+              <a class="goods__link" href="#">
+                <span class="goods__name">Другая продукция</span>
+              </a>
+            </article>
+            <!-- ./products__good -->
+          </div>
+          <!-- ./products__items-wrapper -->
+          <div class="products__items-wrapper">
+            <article class="goods products__good" style="background: url('./img/products/item-1.png') no-repeat;
+            background-size: cover; background-position: center center;">
+              <a class="goods__link" href="#">
+                <span class="goods__name">Назначение №1</span>
+              </a>
+            </article>
+            <!-- ./products__good -->
+            <article class="goods products__good" style="background: url('./img/products/item-2.png') no-repeat;
+            background-size: cover; background-position: center center;">
+              <a class="goods__link" href="#">
+                <span class="goods__name">Назначение №2</span>
+              </a>
+            </article>
+            <!-- ./products__good -->
+            <article class="goods products__good" style="background: url('./img/products/item-3.png') no-repeat;
+            background-size: cover; background-position: center center;">
+              <a class="goods__link" href="#">
+                <span class="goods__name">Назначение №3</span>
+              </a>
+            </article>
+            <!-- ./products__good -->
+            <article class="goods products__good" style="background: url('./img/products/item-4.png') no-repeat;
+            background-size: cover; background-position: center center;">
+              <a class="goods__link" href="#">
+                <span class="goods__name">Назначение №4</span>
+              </a>
+            </article>
+            <!-- ./products__good -->
+            <article class="goods products__good" style="background: url('./img/products/item-5.png') no-repeat;
+            background-size: cover; background-position: center center;">
+              <a class="goods__link" href="#">
+                <span class="goods__name">Назначение №5</span>
+              </a>
+            </article>
+            <!-- ./products__good -->
+            <article class="goods products__good" style="background: url('./img/products/item-6.png') no-repeat;
+            background-size: cover; background-position: center center;">
+              <a class="goods__link" href="#">
+                <span class="goods__name">Другие назначения</span>
+              </a>
+            </article>
+            <!-- ./products__good -->
+          </div>
+          <!-- ./products__items-wrapper -->
+        </div>
+        <!-- ./products__inner -->
+      </div>
+      <!-- ./container -->
+    </section>
+    <!-- ./products -->
+    <section class="projects">
+      <div class="container">
+        <div class="projects__inner">
+          <div class="row projects__row">
+            <h3 class="title projects__title">Наши работы</h3>
+            <a href="#" class="projects__link">показать все</a>
+          </div>
+          <!-- /.row projects__row -->
+          <div class="slider-work projects__slider">
+            <div class="swiper-wrapper slider-work__wrapper">
+              <div class="swiper-slide slider-work__slide">
+                <div class="row slider-work__row">
+                  <h4 class="slider-work__name">ПАО «УРАЛКАЛИЙ»</h4>
+                  <p class="slider-work__desc">Выполнена работа по нанесению защитного покрытия <a href="#" class="slider-work__link">Belzona 1321</a> на рабочее колесо насоса Д6300-27-3, насос перекачивает рассол с включениями песка и щебня</p>
+                </div>
+                <img src="./img/projects/project-1.png" alt="" class="slider-work__img">
+              </div>
+              <!-- /.slider-work__slide -->
+              <div class="swiper-slide slider-work__slide">
+                <div class="row slider-work__row">
+                  <h4 class="slider-work__name">Название предприятия</h4>
+                  <p class="slider-work__desc">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Пунктуация оксмокс по всей ему даже все великий залетают рукопись маленький.</p>
+                </div>
+                <img src="./img/projects/project-1.png" alt="" class="slider-work__img">
+              </div>
+              <!-- /.slider-work__slide -->
+            </div>
+            <!-- /.slider-work__wrapper -->
+            <div class="slider-work__arrows">
+              <svg class="slider-work__arrows-prev" width="17" height="30" viewBox="0 0 17 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.585764 16.4142C-0.195255 15.6331 -0.195208 14.3668 0.585869 13.5857L13.3143 0.858286C14.0953 0.0772657 15.3617 0.0773135 16.1427 0.858391C16.9237 1.63947 16.9237 2.9058 16.1426 3.68682L4.82846 15.0001L16.1417 26.3142C16.9228 27.0953 16.9227 28.3616 16.1416 29.1427C15.3606 29.9237 14.0942 29.9236 13.3132 29.1426L0.585764 16.4142ZM3.92656 17.0001L1.99996 17L2.0001 13L3.92671 13.0001L3.92656 17.0001Z"/>
+              </svg>
+              <svg class="slider-work__arrows-next" width="17" height="30" viewBox="0 0 17 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4142 16.4142C17.1952 15.6332 17.1952 14.3668 16.4142 13.5858L3.68623 0.857885C2.90518 0.076838 1.63885 0.0768408 0.857803 0.857891C0.0767563 1.63894 0.0767591 2.90527 0.857809 3.68632L12.1715 15L0.857859 26.3137C0.0768119 27.0948 0.0768147 28.3611 0.857865 29.1422C1.63892 29.9232 2.90525 29.9232 3.68629 29.1422L16.4142 16.4142ZM13.0734 17L15 17L15 13L13.0734 13L13.0734 17Z"/>
+              </svg>  
+            </div>
+            <!-- ./slider-work__arrows -->
+          </div>
+          <!-- /.projects__slider -->
+        </div>
+        <!-- /.projects__inner -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.projects -->
+  </main>
+  <!-- ./content -->
+  <footer class="footer page__footer">
+    <div class="container">
+      <section class="company footer__top">
+        <h3 class="title title_white company__title">о компании</h3>
+        <div class="row company__row">
+          <article class="company__video-wrapper">
+            <iframe class="company__video" src="https://www.youtube.com/embed/FG2vXEeVgKM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </article>
+          <!-- ./company__video -->
+          <article class="company__info">
+            <p class="company__desc company__desc">ООО «Новые Гидросистемы» является официальным представителем Belzona Polymerics Ltd</p>
+            <p class="company__desc company__desc_second">Более 60-ти лет компания Belzona является мировым лидером по разработке инновационных ремонтных 
+              составов и промышленных защитных покрытий</p>
+            <a href="#" class="button button_rect button__company">Подробнее</a>
+          </article>
+          <!-- ./company__info -->
+        </div>
+        <!-- ./row company__row -->
+      </section>
+      <!-- ./company footer__top -->
+    </div>
+    <!-- ./container -->
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="copyright">
+            <div class="copyright__inner">
+              <p class="copyright__name">ООО «Новые Гидросистемы»</p>
+              <span class="copyright__date">© 2015 – 2020 </span>
+            </div>
+          </div>
+          <!-- ./copyright -->
+          <a href="/"><img class="logo" src="./img/logo/logo.png" alt="logo"></a>
+          <!-- ./logo -->
+          <div class="contacts">
+            <a class="contacts__phone" href="tel:+73422159737">+7 (342) 215-97-37</a>
+            <a class="contacts__email" target="_blank" href="mailto:belzona@ngs-perm.com">belzona@ngs-perm.com</a>
+          </div>
+          <!-- ./contacts -->
+        </div>
+      </div>
+      <!-- ./container -->
+    </div>
+    <!-- ./footer__bottom -->
+  </footer>
+  <!-- ./footer -->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

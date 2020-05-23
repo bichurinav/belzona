@@ -1,0 +1,23 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .products__items-wrapper {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &:after {
+            content: '';
+            flex-basis: 31%;
+            margin-bottom: 35px;
+        }
+      }
+      .goods {
+        flex-basis: 31%;
+        margin-bottom: 35px;
+        @media (max-width: 980px) {
+            flex-basis: 48%;
+        }
+      }
+
+      .popup-callback__form {
+        transform: translateY(0);
+      }
+ }

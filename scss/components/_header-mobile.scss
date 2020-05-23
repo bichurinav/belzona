@@ -1,0 +1,55 @@
+.header-mobile {
+    display: none;
+    justify-content: space-between;
+    width: 200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: 40px;
+    @media (max-width: 960px) {
+        display: flex;
+    }
+    @media (max-width: 666px) {
+        margin-right: 0;
+    }
+
+    @media (max-width: 440px) {
+        
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    &__info {
+        &:hover {
+            .header-mobile__desc {
+                display: block;
+            }
+        }
+    }
+    &__icon {
+        width: 24px;
+        height: 24px;
+    }
+    &__desc {
+        display: none;
+        z-index: 777;
+        position: absolute;
+        border-radius: 3px;
+        padding: 10px;
+        white-space: nowrap;
+        background: #fff;
+        box-shadow: 0 3px 5px silver;
+
+        &_prelast {
+            @media (max-width: 666px) {
+                left: -10px;
+            }
+        }
+
+        &_last {
+            @media (max-width: 666px) {
+                right: 0;
+            }
+        }
+
+    }
+}

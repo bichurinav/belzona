@@ -1,0 +1,46 @@
+// .menu-btn {
+// 	background: $main-color;
+// 	width: 30px;
+// 	height: 4px;
+// 	border-radius: 100px;
+// 	position: relative;
+// 	cursor: pointer;
+// 	&:after, &:before {
+// 		content: '';
+// 		@extend .menu-btn;
+// 		position: absolute;
+// 		left: 0;
+// 	}
+// 	&:before {
+// 		top: -10px;
+// 	}
+// 	&:after {
+// 		bottom: -10px;
+// 	}
+// }
+.menu-btn {
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 24px;
+	cursor: pointer;
+	@media (max-width: 768px) {
+		display: flex;
+	}
+	@media (max-width: 440px) {
+		position: absolute;
+		left: 20px;
+		top: 20px;
+    }
+	&__line {
+		height: 3px;
+		position: relative;
+		width: 100%;
+		background: #fff;
+		border-radius: 25px;
+		&:nth-child(2) {
+			width: 80%;
+		}
+	}
+}

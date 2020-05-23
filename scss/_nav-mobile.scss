@@ -1,0 +1,48 @@
+.nav-mobile {
+    z-index: 998;
+    position: absolute;
+    width: 100%;
+    transform: translateY(-1000%);
+    background: $main-color;
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    @media (max-width: 768px) {
+        display: flex;
+    }
+    &_show {
+        animation: showMenu .5s forwards;
+    }
+    &_hide {
+        animation: hideMenu 2s forwards;
+    }
+    &__link {
+        color: #fff;
+        display: flex;
+        border: 1px solid #fff;
+        justify-content: center;
+        font-weight: 500;
+        align-items: center;
+        padding: 15px;
+        min-width: 200px;
+        margin: 10px;
+    }
+    @keyframes showMenu {
+        from {
+            transform: translateY(-1000%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    @keyframes hideMenu {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(-1000%);
+        }
+    }
+}

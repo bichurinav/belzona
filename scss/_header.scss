@@ -1,0 +1,66 @@
+.header {
+	background: $main-color;
+	position: relative;
+	z-index: 999;
+	height: 75px;
+	padding: 5px 0;
+	display: flex;
+	align-items: center;
+	font-family: $second-font;
+	@media screen and (max-width: 1024px) {
+		height: auto;
+	}
+	// @media (max-width: 768px) {
+	// 	position: sticky;
+	// 	top: 0;
+	// }
+	// @media screen and (max-width: 360px) {
+	// 	height: 115px;
+	// }
+	&__container {
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		@media (max-width: 440px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__menu-btn {
+		margin-right: 30px;
+	}
+
+	&-info {
+		color: #fff;
+		display: flex;
+		@media (max-width: 960px) {
+			&_hide {
+				display: none;
+			}
+		}
+	}
+	&__button {
+		@media screen and (max-width: 1024px) {
+			order: 2;
+		}
+		@media (max-width: 666px) {
+			display: none !important;
+		}
+	}
+}
+.info {
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&:first-child {
+			margin-right: 70px;
+		}
+	}
+	&__icon {
+		margin-right: 10px;
+		max-width: 20px;
+		max-height: 20px;
+	}
+}
