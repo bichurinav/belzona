@@ -47,86 +47,10 @@ for (let i = 0; i < slidesBtn.length; i++) {
   slidesBtn[i].addEventListener('click', showForm);
 }
 
-btnSend.addEventListener('click', checkForm);
-
+popupForm.addEventListener('submit', checkForm);
 callbackBtn.addEventListener('click', showForm);
 btnClose.addEventListener('click', hideForm);
 
-function checkForm() {
-
-  let sendCount = null;
-
-  function error(field, fieldTitle) {
-    if (field.value != '') {
-      switch(fieldTitle) {
-        case 'имя':
-          if (/['\d']/.test(field.value)) {
-            field.nextElementSibling.className += ' popup-callback__error_show';
-            field.nextElementSibling.textContent = 'Введите корректное ' + fieldTitle;
-          } else {
-            if (field.value.length < 2) {
-              field.nextElementSibling.className += ' popup-callback__error_show';
-              field.nextElementSibling.textContent = 'Введите корректное ' + fieldTitle;
-            } else {
-              field.nextElementSibling.className = 'popup-callback__error';
-              field.nextElementSibling.textContent = '-';
-              ++sendCount;
-            }
-          }
-        break;
-        case 'телефон':
-            if (field.value.length < 18)  {
-            field.nextElementSibling.className += ' popup-callback__error_show';
-            field.nextElementSibling.textContent = 'Введите корректный ' + fieldTitle;
-            } else {
-              field.nextElementSibling.className = 'popup-callback__error';
-              field.nextElementSibling.textContent = '-';
-              ++sendCount;
-            }
-        break;
-      }
-
-    } else {
-      field.nextElementSibling.className = 'popup-callback__error popup-callback__error_show';
-      field.nextElementSibling.textContent = 'Заполните поле';
-    }
-  }
-
-  error(fieldName, 'имя');
-  error(fieldPhone, 'телефон');
-  
-  if (sendCount === 2) {
-    console.log(true);
-    fieldPhone.value = '';
-    fieldName.value = '';
-  }
-
-}
-
-function showForm() {
-  popupInner.className += ' popup-callback__inner_show'
-  popup.style.display = "block";
-  popupForm.style.display = "flex";
-}
-
-function hideForm() {
-  for (let i = 0; i < fields.length; i++) {
-    fields[i].nextElementSibling.className = 'popup-callback__error';
-  }
-  popupForm.className = "popup-callback__form popup-callback__form_hide";
-  setTimeout(function() {
-    popupForm.style.display = "none";
-    popupForm.className = "popup-callback__form";
-    hidePopup();
-  }, 300)
-}
-function hidePopup() {
-  popupInner.className = "popup-callback__inner popup-callback__inner_hide"
-  setTimeout(function() {
-    popup.style.display = "none";
-    popupInner.className = "popup-callback__inner"
-  }, 300)
-}
 
 // mask phone
 var phoneMask = IMask(
@@ -204,5 +128,79 @@ if(!/(MSIE|Triden)/.test(navigator.userAgent)) {
       }
     });
   }
+}
+
+
+function checkForm(e) {
+  e.preventDefault();
+  let sendCount = null;
+
+  function error(field, fieldTitle) {
+    if (field.value != '') {
+      switch(fieldTitle) {
+        case 'имя':
+          if (/['\d']/.test(field.value)) {
+            field.nextElementSibling.className += ' popup-callback__error_show';
+            field.nextElementSibling.textContent = 'Введите корректное ' + fieldTitle;
+          } else {
+            if (field.value.length < 2) {
+              field.nextElementSibling.className += ' popup-callback__error_show';
+              field.nextElementSibling.textContent = 'Введите корректное ' + fieldTitle;
+            } else {
+              field.nextElementSibling.className = 'popup-callback__error';
+              field.nextElementSibling.textContent = '-';
+              ++sendCount;
+            }
+          }
+        break;
+        case 'телефон':
+            if (field.value.length < 18)  {
+            field.nextElementSibling.className += ' popup-callback__error_show';
+            field.nextElementSibling.textContent = 'Введите корректный ' + fieldTitle;
+            } else {
+              field.nextElementSibling.className = 'popup-callback__error';
+              field.nextElementSibling.textContent = '-';
+              ++sendCount;
+            }
+        break;
+      }
+
+    } else {
+      field.nextElementSibling.className = 'popup-callback__error popup-callback__error_show';
+      field.nextElementSibling.textContent = 'Заполните поле';
+    }
+  }
+
+  error(fieldName, 'имя');
+  error(fieldPhone, 'телефон');
+  
+  if (sendCount === 2) {
+    console.log(true);
+    fieldPhone.value = '';
+    fieldName.value = '';
+  }
+}
+function showForm() {
+  popupInner.className += ' popup-callback__inner_show'
+  popup.style.display = "block";
+  popupForm.style.display = "flex";
+}
+function hideForm() {
+  for (let i = 0; i < fields.length; i++) {
+    fields[i].nextElementSibling.className = 'popup-callback__error';
+  }
+  popupForm.className = "popup-callback__form popup-callback__form_hide";
+  setTimeout(function() {
+    popupForm.style.display = "none";
+    popupForm.className = "popup-callback__form";
+    hidePopup();
+  }, 300)
+}
+function hidePopup() {
+  popupInner.className = "popup-callback__inner popup-callback__inner_hide"
+  setTimeout(function() {
+    popup.style.display = "none";
+    popupInner.className = "popup-callback__inner"
+  }, 300)
 }
 
