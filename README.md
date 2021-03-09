@@ -1,5 +1,5 @@
 
-# Belzona (landing page) [Глянуть сайт](https://bichurinav.github.io/belzona/)
+# [Belzona](https://bichurinav.github.io/belzona-layout/) (landing page)
 * HTML,
 * CSS,
 * JS vanilla
